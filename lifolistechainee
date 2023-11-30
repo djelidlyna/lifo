@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<malloc.h>
+typedef struct maillon maillon;
+typedef maillon* liste;
+   struct maillon {
+  int info;
+  liste suiv;
+   } ;
+
+void creationlifo(int n , liste *tete){
+    int x,i;
+    liste p;
+    *tete=NULL;
+    for(i=1;i<n;i++){
+     p=allouer();
+     printf("donner la valeur ");
+     scanf("%d",x);
+     p->info=x;
+     p->suiv=*tete;
+     *tete=p;
+    }
+
+}
+int main(){
+    int n;
+    liste L;
+printf("donner le nmbr de maillon");
+scanf("%d",&n);
+creationlifo(n,&L);
+
+
+return 0;
+}
