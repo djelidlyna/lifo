@@ -27,7 +27,7 @@ int main(){
 printf("donner le nmbr de maillon");
 scanf("%d",&n);
 creationlifo(n,&L);
-
-
 return 0;
+
+
 }
